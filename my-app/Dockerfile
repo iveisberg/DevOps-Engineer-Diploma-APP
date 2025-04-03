@@ -3,6 +3,7 @@ FROM nginx:alpine
 
 # Копируем статические файлы
 COPY index.html /usr/share/nginx/html/index.html
+COPY error.html /usr/share/nginx/html/error.html
 
 # Копируем конфигурацию Nginx
 COPY nginx.conf /etc/nginx/nginx.conf

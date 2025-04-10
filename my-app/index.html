@@ -21,12 +21,29 @@
             height: auto;
             margin-top: 20px;
         }
+        .version-info {
+            background-color: #e9ecef;
+            border-radius: 8px;
+            padding: 10px 20px;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #495057;
+        footer {
+            margin-top: 50px;
+        }
     </style>
 </head>
 <body>
     <h1>Добро пожаловать на статический сайт моего тестового приложения!</h1>
     <p>Это главная страница моего тестового приложения.</p>
     <button onclick="window.location.href='error.html'">Перейти на страницу ошибки</button>
+
+    <!-- Отображение версии приложения -->
+    <div class="version-info">
+        Версия приложения: <strong>1.0.0</strong>
+    </div>
+
     <footer>
         <p>&copy; 2025 Простой сайт</p>
     </footer>

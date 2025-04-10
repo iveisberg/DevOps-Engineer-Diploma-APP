@@ -40,5 +40,5 @@ jobs:
       # Шаг 6: Обновление Kubernetes Deployment
       - name: Update Kubernetes Deployment
         run: |
-          kubectl --insecure-skip-tls-verify set image deployment/app-nginx-deployment \
+          kubectl --insecure-skip-tls-verify set image deployment/app-nginx \
             app-nginx=iveisberg/test-app:${{ github.sha }}
